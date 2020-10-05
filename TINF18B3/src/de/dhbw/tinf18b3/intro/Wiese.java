@@ -6,15 +6,15 @@ public class Wiese {
 		super();
 	}
 	
-	public void gründeKolonie(Flugameise ameise) {
+	public void grÃ¼ndeKolonie(Flugameise ameise) {
 		System.out.println("W1: Ich will lieber ein Haus!");
 	}
 	
-	public void gründeKolonie(LasiusNiger ameise) {
+	public void grÃ¼ndeKolonie(LasiusNiger ameise) {
 		System.out.println("W2: Yeah! Unter die Steinplatten.");
 	}
 	
-	public void gründeKolonie(Rossameise ameise) {
+	public void grÃ¼ndeKolonie(Rossameise ameise) {
 		System.out.println("W3: Wo ist denn der Baum?");
 	}
 }

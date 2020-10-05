@@ -7,13 +7,13 @@ public class Main {
 
 	public static void main(String[] args) {
 		final Flugameise schwarz = new LasiusNiger();
-		final Flugameise groß = new Rossameise();
+		final Flugameise groÃŸ = new Rossameise();
 		final List<Flugameise> alleAmeisen = Arrays.asList(
 				schwarz,
-				groß);
+				groÃŸ);
 		
 		schwarz.fliege();
-		groß.fliege();
+		groÃŸ.fliege();
 //		for (Flugameise each : alleAmeisen) {
 //			each.fliege();
 //		}
@@ -21,11 +21,11 @@ public class Main {
 		alleAmeisen.forEach(Flugameise::fliege);
 		
 		final Wiese unserGarten = new Wiese();
-		unserGarten.gründeKolonie(schwarz);
-		unserGarten.gründeKolonie(groß);
+		unserGarten.grÃ¼ndeKolonie(schwarz);
+		unserGarten.grÃ¼ndeKolonie(groÃŸ);
 //		for (Flugameise each : alleAmeisen) {
-//			unserGarten.gründeKolonie(each);
+//			unserGarten.grï¿½ndeKolonie(each);
 //		}
-		alleAmeisen.forEach(unserGarten::gründeKolonie);
+		alleAmeisen.forEach(unserGarten::grÃ¼ndeKolonie);
 	}
 }
