@@ -12,11 +12,14 @@ public class WürfelTest {
 		Zufallsgenerator zufall = Mockito.mock(Zufallsgenerator.class);
 		Mockito.when(zufall.zufallszahl()).thenReturn(1);
 		//Mockito.replay(zufall);
+		
 		Würfel target = new Würfel(6, zufall);
 		
 		int actual = target.wurf();
 		
 		assertThat(actual).isEqualTo(1);
+		
+		//Mockito.verify();
 	}
 	
 	@Test
@@ -39,5 +42,7 @@ public class WürfelTest {
 		int actual = target.wurf();
 		
 		assertThat(actual).isEqualTo(4);
+		
+		Mockito.verify(zufall, Mockito.times(2)).zufallszahl();
 	}
 }
