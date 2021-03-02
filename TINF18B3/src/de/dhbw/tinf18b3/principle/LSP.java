@@ -1,7 +1,9 @@
 package de.dhbw.tinf18b3.principle;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Properties;
 
 public class LSP {
 
@@ -22,13 +24,19 @@ public class LSP {
 
 		// Invariant
 		List<Number> nurGleicherTyp = new ArrayList<Number>();
-		List<Number> invariant = nurGleicherTyp;
-
+		List<? extends Number> invariant = numbers2;
+		List<Object> objekte = new ArrayList<Object>();
+		List<? super Integer> kontra = objekte;
+		
 		// Kovariant
 		List<? extends Number> kovariant = numbers2;
 		
 		// Kontravariant
 		List<Object> ganzOben = new ArrayList<Object>();
 		List<? super Number> kontravariant = ganzOben;
+	}
+	
+	private <A extends Number & Serializable> A something() {
+		return null;
 	}
 }
