@@ -8,5 +8,6 @@ public class Main {
 		RahmenDekorierer umrandung = new RahmenDekorierer(scrolling);
 		
 		umrandung.zeichne();
+		System.out.println("** Ende");
 	}
 }

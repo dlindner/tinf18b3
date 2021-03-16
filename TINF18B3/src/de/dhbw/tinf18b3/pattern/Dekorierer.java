@@ -11,6 +11,8 @@ public abstract class Dekorierer implements VisuelleKomponente {
 
 	@Override
 	public void zeichne() {
+		System.out.println("** Dekorierer::zeichne beginnt im Kontext " + getClass().getSimpleName());
 		nachfolger.zeichne();
+		System.out.println("** Dekorierer::zeichne endet im Kontext " + getClass().getSimpleName());
 	}
 }

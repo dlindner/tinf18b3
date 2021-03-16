@@ -8,6 +8,8 @@ public class TextAnzeige implements VisuelleKomponente {
 	
 	@Override
 	public void zeichne() {
+		System.out.println("** TextAnzeige::zeichne beginnt");
 		System.out.println("Ein wichtiger Text wird angezeigt");
+		System.out.println("** TextAnzeige::zeichne endet");
 	}
 }
