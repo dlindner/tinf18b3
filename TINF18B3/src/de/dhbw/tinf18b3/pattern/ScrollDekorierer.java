@@ -10,11 +10,11 @@ public class ScrollDekorierer extends Dekorierer {
 	
 	@Override
 	public void zeichne() {
-		
+		scrolleBis();
+		super.zeichne();
 	}
 	
 	void scrolleBis() {
-		
+		System.out.println("Füge Scrollbalken hinzu");		
 	}
-
 }

@@ -2,15 +2,15 @@ package de.dhbw.tinf18b3.pattern;
 
 public abstract class Dekorierer implements VisuelleKomponente {
 	
-	private final VisuelleKomponente komponente;
-	
-	public Dekorierer(VisuelleKomponente komponente) {
+	private final VisuelleKomponente nachfolger;
+
+	public Dekorierer(VisuelleKomponente nachfolger) {
 		super();
-		this.komponente = komponente;
+		this.nachfolger = nachfolger;
 	}
 
 	@Override
 	public void zeichne() {
-		komponente.zeichne();
+		nachfolger.zeichne();
 	}
 }

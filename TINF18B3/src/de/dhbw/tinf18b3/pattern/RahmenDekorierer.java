@@ -15,6 +15,6 @@ public class RahmenDekorierer extends Dekorierer {
 	}
 	
 	void zeichneRahmen() {
-		// Was soll hier rein?
+		System.out.println("Ein schöner Rahmen");
 	}
 }
