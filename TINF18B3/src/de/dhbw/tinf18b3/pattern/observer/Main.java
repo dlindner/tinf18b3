@@ -5,7 +5,7 @@ public class Main {
 	public static void main(String[] args) throws InterruptedException {
 		KonkretesSubjekt subjekt0 = new KonkretesSubjekt();
 		KonkretesSubjekt subjekt1 = new KonkretesSubjekt();
-		KonkreterBeobachter beobachter0 = new KonkreterBeobachter(subjekt0);
+		KonkreterBeobachter beobachter0 = new KonkreterBeobachter();
 		subjekt0.meldeAn(beobachter0);
 		subjekt1.meldeAn(beobachter0);
 		for (int i = 0; i < 5; i++) {

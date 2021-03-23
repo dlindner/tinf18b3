@@ -7,7 +7,7 @@ public class UnaufmerksamerBeobachter implements Beobachter {
 	}
 	
 	@Override
-	public void aktualisiere() {
+	public void aktualisiere(Object neuerZustand) {
 		System.out.println("Hä? Was?");
 	}
 }

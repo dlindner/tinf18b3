@@ -2,5 +2,5 @@ package de.dhbw.tinf18b3.pattern.observer;
 
 public interface Beobachter {
 
-	void aktualisiere();
+	void aktualisiere(Object neuerZustand);
 }

@@ -22,7 +22,9 @@ public abstract class Subjekt {
 	
 	public void benachrichtige() {
 		for (Beobachter each : this.angemeldeteBeobachter) {
-			each.aktualisiere();
+			each.aktualisiere(gibZustand());
 		}
 	}
+	
+	protected abstract Object gibZustand();
 }
