@@ -1,4 +1,4 @@
-package de.dhbw.tinf18b3.pattern;
+package de.dhbw.tinf18b3.pattern.decorator;
 
 public class TextAnzeige implements VisuelleKomponente {
 	
